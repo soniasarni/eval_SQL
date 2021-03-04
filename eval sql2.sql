@@ -28,7 +28,8 @@ idPersonne int auto_increment primary key,
 nomP varchar (50),
 prenomP varchar (50),
 email varchar (150) NOT NULL);
-
+alter table personne alter email set default'%@%';
+select * from personne;
 create table logement_personne(
 idLogementPersonne int auto_increment primary key,
 idPersonne int,
